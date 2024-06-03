@@ -17,6 +17,11 @@ let orders = [
 
 //Endpoints or routes
 //Get menus
+app.get('/api/menu',(req,res)=>{
+    res.json(menuItems);
+});
+
+
 app.get('/api/orders',(req,res)=>{
     res.json(orders);
 });
