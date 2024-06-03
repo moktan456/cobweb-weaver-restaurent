@@ -15,7 +15,7 @@ let orders = [
     {id:1, items :[{id:1,name:'Sandwich',price:4.5,quantity:3}],date:new Date(), total:9},
 ];
 
-//Endpoints
+//Endpoints or routes
 //Get menus
 app.get('/api/orders',(req,res)=>{
     res.json(orders);
