@@ -10,6 +10,7 @@ app.use(express.json());
 let menuItems = [
     {id:1,name:'Sandwich', price: 4.5, description: "Best cheesy sandwich"},
     {id:2, name:'Burger',price:5, description: "Best burger in town"},
+    {id:3, name: "Pasta", price: 7.99, description: "Creamy alfredo pasta"}
 ];
 let orders = [
     {id:1, items :[{id:1,name:'Sandwich',price:4.5,quantity:3}],date:new Date(), total:9},
