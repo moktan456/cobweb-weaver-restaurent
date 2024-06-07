@@ -10,7 +10,7 @@ app.use(express.json());
 let menuItems = [
     {id:1,name:'Sandwich', price: 4.5, description: "Best cheesy sandwich"},
     {id:2, name:'Burger',price:5, description: "Best burger in town"},
-    {id:3, name: "Pasta", price: 7.99, description: "Creamy alfredo pasta"}
+    {id:3, name: "Kebab", price: 11.99, description: "Finger lickin juicy kebab"}
 ];
 let orders = [
     {id:1, items :[{id:1,name:'Sandwich',price:4.5,quantity:3}],date:new Date(), total:9},
@@ -22,7 +22,7 @@ app.get('/api/menu',(req,res)=>{
     res.json(menuItems);
 });
 
-
+//Get old orders
 app.get('/api/orders',(req,res)=>{
     res.json(orders);
 });
